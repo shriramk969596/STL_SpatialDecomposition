@@ -1,0 +1,35 @@
+/**************************************************************************************
+
+    THIS IS A GENERATED FILE, ANY CHANGE WILL BE LOST WHEN CMAKE RUNS
+
+    In order to make persistent changes, the template in the ESS Build tools needs to
+    adapted.
+
+***************************************************************************************/
+1 VERSIONINFO
+
+FILEVERSION ${PROJECT_VERSION_MAJOR}, ${PROJECT_VERSION_MINOR}, ${PROJECT_VERSION_PATCH}, ${ESS_BUILD}
+PRODUCTVERSION ${PROJECT_VERSION_MAJOR}, ${PROJECT_VERSION_MINOR}, ${PROJECT_VERSION_PATCH},  ${ESS_BUILD}
+FILEOS 0x4
+FILETYPE 0x0
+
+BEGIN
+BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "Engineering Software Steyr GmbH"
+            VALUE "FileDescription",  "ESS development"
+            VALUE "FileVersion",      "${PROJECT_VERSION_MAJOR},${PROJECT_VERSION_MINOR},${PROJECT_VERSION_PATCH},${ESS_BUILD}"
+            VALUE "InternalName",     "${VERSION_TARGET}"
+            VALUE "LegalCopyright",   "Copyright © ${ESS_YEAR} Engineering Software Steyr GmbH"
+            VALUE "ProductName",      "${PROJECT_NAME}"
+            VALUE "ProductVersion",   "${PROJECT_VERSION_MAJOR},${PROJECT_VERSION_MINOR},${PROJECT_VERSION_PATCH},${ESS_BUILD}"
+        END
+    END
+
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 0x04B0
+    END
+END

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+ulimit -c unlimited
+LD_LIBRARY_PATH=$DIR/lib:$LD_LIBRARY_PATH $DIR/bin/@TARGET_NAME@ $@
+RET_CODE=$?
+
+if [ $RET_CODE -ne 0 ] 
+then
+    echo "the program exited with an abnormal return code $RET_CODE"
+    echo "please report this issue:"
+    echo " - append the log file in the project folder"
+    echo " - append the core file generated int the working folder"
+    echo " - write an explanation on what wwas the inteded use of the tool and the basic configuration used"
+fi
+
+exit $?
